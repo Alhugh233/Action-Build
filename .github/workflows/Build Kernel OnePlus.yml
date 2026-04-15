@@ -261,8 +261,8 @@ jobs:
             done
             return 1
           }
-          if ! check_repo "${REPOS["OnePlusOSS"]}"; then
-            if ! check_repo "${REPOS["Dynamic"]}"; then
+          if ! check_repo "${REPOS["Dynamic"]}"; then
+            if ! check_repo "${REPOS["OnePlusOSS"]}"; then
               check_repo "${REPOS["Appendix"]}"
             fi
           fi
